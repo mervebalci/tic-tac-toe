@@ -42,3 +42,14 @@ export default function Board() {
 
 // className="square" is a button property or prop that tells CSS how to style the button.
 // Group the squares into rows with divs and add some CSS classes(board-row) to make a 3x3 board.
+
+/*
+The handleClick function creates a copy of the squares array (nextSquares) with the JavaScript slice() Array method.
+slice() function creates a COPY of the squares array instead of modifying th existing array.
+Then, handleClick updates the nextSquares array to add X to the clicked square.
+
+Immutability makes complex features much easier to implement. 
+Later, a “time travel” feature can be implemented that lets you review the game’s history and “jump back” to past moves. 
+This functionality isn’t specific to games—an ability to undo and redo certain actions is a common requirement for apps. 
+Avoiding direct data mutation lets you keep previous versions of the data intact, and reuse them later.
+*/
